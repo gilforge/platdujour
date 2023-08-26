@@ -1,0 +1,8 @@
+# Ignorer les répertoires
+build/
+dist/
+__pycache__/
+sources/
+
+# Ignorer les fichiers spécifiques
+main.spec
