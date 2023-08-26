@@ -13,8 +13,11 @@
 - La seconde colonne est la désignation du plat : Kebab maison, pizza à l'ananas (^_^), etc. 
 
 # Installation
-- Décompressez le fichier ZIP
+- Décompressez le fichier [>> PlatDuJour_v0.0.1_win.zip <<](https://github.com/gilforge/platdujour/blob/main/PlatDuJour_v0.0.1_win.zip)
 - Double cliquez sur le fichier exécutable.# Liste des fichiers
 
 # Versions
 - 0.0.1 > Mise à disposition fonctionnelle (1er jet).
+
+## Capture de PlatDuJour
+![Capture v0.0.1](https://github.com/gilforge/platdujour/blob/main/img/platdujour_v1.0.0_win.png)
