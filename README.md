@@ -20,4 +20,4 @@
 - 0.0.1 > Mise à disposition fonctionnelle (1er jet).
 
 ## Capture de PlatDuJour
-![Capture v0.0.1](https://github.com/gilforge/platdujour/blob/main/img/platdujour_v1.0.0_win.png)
+![Capture v0.0.1](https://github.com/gilforge/platdujour/blob/main/img/platdujour_v0.0.1_win.png)
