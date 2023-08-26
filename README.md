@@ -8,9 +8,10 @@
 - Une fois que la liste vous convient, vous pouvez l'exporter en PDF et l'emmener avec vous pour faire vos courses (sur le marché, par exemple).
 
 # La base de données
-- Vous pouvez créer un fichier tableur (libreoffice, excel, google sheet, etc.) que vous mettez à jour avec vos dernières découvertes, puis vous l'exporter en CSV pour l'utiliser avec **Plat Du Jour**. N'oubliez pas de placer le CSV dans le même répertoire que l'exécutable **PlatDuJour.exe**.
+- Vous pouvez créer un fichier tableur (libreoffice, excel, google sheet, etc.) que vous mettez à jour avec vos dernières découvertes culinaires, puis vous l'exporter en CSV pour l'utiliser avec **Plat Du Jour**. N'oubliez pas de placer le CSV dans le même répertoire que l'exécutable **PlatDuJour.exe**.
 - Dans le tableau, la 1ère colonne indique vos préférences. Vous pourriez aimer manger un plat le midi, le soir ou le manger aux deux repas. Vous saisirez donc : m (pour midi), s (pour soir), ms (pour midi ou soir).
-- La seconde colonne est la désignation du plat : Kebab maison, pizza à l'ananas (^_^), etc. 
+- La seconde colonne est la désignation du plat : Kebab maison, pizza à l'ananas (^_^), etc.
+- Pour les plus "réticents" à la cuisine, vous pouvez remplir votre BDD avec des noms de restos XD
 
 # Installation
 - Décompressez le fichier [>> PlatDuJour_v0.0.1_win.zip <<](https://github.com/gilforge/platdujour/blob/main/PlatDuJour_v0.0.1_win.zip)
