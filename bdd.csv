@@ -1,123 +1,117 @@
-moment,plat
-m,Burger raclette (messenger Claire)
-m,Cassoulet
-m,Chili pour Gilles
-m,"Chou vert, poitrine fumée"
-m,Coquille poireaux st jacques
-m,"Coquilles st jacques, crevettes, champignons"
-m,Couscous légumes
-m,"Crêpes de veau haché, champignons"
-m,Curry de lentilles aux carottes
-m,Endives au jambon
-m,Feuilletés saucisses
-m,"Filet de poulet, riz curry"
-m,Filet mignon au fromage et au lard
-m,Filet mignon sauce maroilles
-m,"Filet mignon, tranches lard, champignons"
-m,Galette des Aravis
-m,Gratin dauphinois
-m,Gratin pdt reblochon
-m,"Gratin pdt,chou-fleur"
-m,Hachis parmentier
-m,Hachis parmentier de boeuf et potimarron
-m,Lasagnes légumes
-m,Lasagnes viande
-m,"Lentilles bolo, chorizo"
-m,Mijoté de sauté de porc
-m,Pates à la charbonnières
-m,Pates carbonara
-m,Pâtes sauce courgettes
-m,"Paupiettes, sauce tomate"
-m,Pdt au four aux oignons fondants (messenger)
-m,Pdt au parmesan
-m,"Pdt grenailles, chorizo"
-m,"Pdt, carottes en rondelles"
-m,"Pdt, cheddar, jambon, poivrons gratinés"
-m,Poêlée lentilles aux champignons
-m,Porc au Paprika
-m,Poulet au maroilles
-m,Poulet sauce provençale
-m,Poulet sauté au citron (facile p.49)
-m,"Poulet, légumes sauce curry vert et lait coco"
-m,Purée de divers légumes
-m,Raclette
-m,Ragout poireaux pdt
-m,"Risotto, 3 poivrons, chorizo"
-m,"Roti cheval, frites"
-m,Roti porc Orloff
-m,Roti porc paysanne
-m,"Semoule épicée, légumes divers"
-m,Spaguettis bolognaise
-m,Wok sauce curry
-m,Wok tomaté
-ms,Aubergines gratinées
-ms,Buddha bowl
-ms,Carottes roties au miel (messenger)
-ms,"Carottes, courgettes sauce curry-etudiant2"
-ms,Coquilles au thon
-ms,Croquettes de pdt et cheddar
-ms,Curry de  poireaux
-ms,Galettes Fajitas chaudes
-ms,Galettes Pdt au comté
-ms,Gratin de courgettes
-ms,Gratin de légumes au fromage
-ms,Hot dog
-ms,"Légumes au four, chorizo"
-ms,Nouilles chinoises aux légumes et épices
-ms,Œufs nid de tomates
-ms,Ratatouille
-ms,Salade César-étudiant p.2
-ms,"Salade concombres, tomates, oignons rouges, feta, melon, basilic"
-ms,Salade de lentilles aux lardons
-ms,Salade fraîcheur
-ms,Salade piémontaise
-ms,Taboulé maison
-ms,"Tian de courgettes, jambon et comté"
-ms,Wok de légumes recette Marmiton
-ms,"Wraps jambon, crudités"
-ms,"Wraps thon mayo, carottes, salade..."
-s,Briochettes à la crème
-s,"Briochettes, tomates, mozzarella"
-s,Cake au reblochon
-s,"Crêpes, raclette, tranches lard"
-s,Croissants jambon
-s,Croque à l'italienne
-s,Croque exotique
-s,Croque fromage à la poele
-s,Croustades champignons
-s,Faluche gratinées
-s,Feuilletés au fromage
-s,Flamiche poireaux
-s,Flammenkuche
-s,Galettes fajitas façon flammenkuche
-s,Galettes fajitas façon pizza
-s,Gougère fromage
-s,Muffins au lardons
-s,Pdt viennoises
-s,Pizza chorizo
-s,Pizza fromage
-s,Quiche Lorraine
-s,"Quiche mimolette, champignons"
-s,Risotto champignons
-s,Soupe à la tomate
-s,Soupe aux courgettes
-s,Soupe de lentilles corail
-s,Soupe façon endives au gratin
-s,Soupe légumes variés
-s,"Soupe poireaux, pdt"
-s,Soupe potimarron
-s,"Soupe potiron, carottes, gingembre"
-s,Tarte au Maroilles
-s,Tarte courgettes
-s,Tarte courgettes et chèvre frais
-s,Tarte jambon et gruyère
-s,Tarte tomates et cantal
-s,Tartines au grill
-s,Tartines avocat crevettes salade
-s,Tartines champignons lardons raclette
-s,Tartines pizza
-s,Tartines savoyardes
-s,Tomates farcies
-s,Velouté de carottes
-s ,Tartines pdt lard fromage reblochon ou comté
-s ,Tartines poireaux reblochon lard
+moment;plat
+s;Pdt viennoises
+s;Tartines savoyardes
+m;Lasagnes viande
+m;Wok tomaté
+s;Pizza chorizo
+m;Galettes Fajitas chaudes
+ms;Légumes au four, chorizo
+m;Pdt, carottes en rondelles
+m;Semoule épicée, légumes divers
+m;Gratin dauphinois
+m;Poulet, légumes sauce curry vert et lait coco
+s;Briochettes, tomates, mozzarella
+m;Roti cheval, frites
+s;Tartines pizza
+s;Feuilletés au fromage
+m;Filet mignon sauce maroilles
+s;Crêpes, raclette, tranches lard
+s;Tarte tomates et cantal
+m;Risotto, 3 poivrons, chorizo
+m;Spaguettis bolognaise
+s;Faluche gratinées
+s;Tartines au grill
+m;Pdt, cheddar, jambon, poivrons gratinés
+m;Paupiettes, sauce tomate
+sm;Taboulé maison
+m;Pates carbonara
+ms;Salade fraîcheur
+m;Chou vert, poitrine fumée
+m;Mijoté de sauté de porc
+m;Raclette
+m;Burger raclette (messenger Claire)
+m;Poulet au maroilles
+ms;Wok de légumes recette Marmiton
+ms;Buddha bowl
+ms;Tian de courgettes, jambon et comté
+s;Risotto champignons
+s;Tartines pdt lard fromage reblochon ou comté
+ms;Wraps thon mayo, carottes, salade...
+ms;Wraps jambon, crudités
+ms;Galettes Pdt au comté
+m;Feuilletés saucisses
+m;Lasagnes légumes
+m;Wok sauce curry
+s;Pizza fromage
+m;Gratin pdt reblochon
+m;gratin de légumes au fromage
+m;Hachis parmentier boeuf et purée potimarron
+s;Flammenkuche
+s;Flamiche poireaux
+m;Endives au jambon
+ms;Hot dog
+m;Cassoulet
+m;Chili pour Gilles
+ms;Œufs nid de tomates
+s;Tarte courgettes
+m;Hachis parmentier
+s;Croissants jambon
+m;Pdt au parmesan
+s;Quiche Lorraine ig bas
+m;Roti porc paysanne
+m;Ragout poireaux pdt
+m;Couscous légumes
+m;Purée de divers légumes
+s;Gougère fromage
+m;Porc au Paprika
+s;Muffins au lardons
+ms;Ratatouille
+m;Roti porc Orloff
+m;Galette des Aravis
+m;Pdt grenailles, chorizo
+s;tarte courgettes et chèvre frais
+m;Coquille poireaux st jacques
+ms;Salade concombres, tomates, oignons rouges, feta, melon, basilic
+m;Filet de poulet, riz curry
+s;Tartines avocat crevettes salade
+ms;Croquettes de pdt et cheddar
+ms;Nouilles chinoises aux légumes et épices
+s;Cake, chorizo, poivron, tomates 
+s;Tomates farcies
+s;Quiche mimolette, champignons
+m;Pâtes sauce courgettes
+m;Poulet sauce provençale
+s;Tarte au Maroilles
+s;Soupe potiron, carottes, gingembre
+s;Soupe potimarron
+s;Soupe poireaux, pdt
+s;Soupe à la tomate
+s;Soupe aux courgettes
+s;Soupe légumes variés
+s;Velouté de carottes
+s;Soupe façon endives au gratin
+m;Crêpes de veau haché, champignons
+ms;Gratin de courgettes
+m;Poulet sauté au citron (facile p.49)
+m;Coquilles st jacques, crevettes, champignons
+m;Lentilles bolo chorizo
+ms;Salade lentilles et lardons
+m;filet mignon au comté et au lard
+s;cake au reblochon
+s;Soupe de lentilles corail
+m;Pates à la charbonnières
+ms;tartines créme, moutarde, lardons, champignons et fromage
+ms;Salade piémontaise
+s;Croque exotique
+m;Gratin pdt,chou-fleur
+ms;Salade César
+m;Filet mignon, tranches lard, champignons
+s;Croustades champignons
+s;Briochettes à la crème
+s;Cake courgettes et Feta
+m;Poulet au curry, lait de coco
+s;Velouté carottes, patates douces
+ms;Curry de lentilles aux carottes
+ms;Frites de patates douces aux épices
+ms;Dahl de lentilles corail
+ms;Brushetta pesto, tomates et mozza

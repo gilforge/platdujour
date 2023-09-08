@@ -39,31 +39,23 @@ from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph
 
-def generate_pdf(meal_plan, filename):
-    pdf = SimpleDocTemplate("meal_plan.pdf", pagesize=letter)
-    styles = getSampleStyleSheet()
-    elements = []
-
-    data = [["Jour", "Moment", "Plat"]]
-    for day_moment, meal in meal_plan.items():
-        day, moment = day_moment.split()
-        data.append([day, moment, meal])
-
-    table = Table(data)
-    table.setStyle(TableStyle([
-        ('BACKGROUND', (0, 0), (-1, 0), colors.grey),
-        ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
-        ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
-        ('FONTSIZE', (0, 0), (-1, 0), 14),
-        ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
-        ('BACKGROUND', (0, 1), (-1, -1), colors.beige),
-        ('GRID', (0, 0), (-1, -1), 1, colors.black)
-    ]))
-
-    elements.append(table)
-    pdf.build(elements)
+def on_export_png_click(window):
+        options = QFileDialog.Options()
+        fileName, _ = QFileDialog.getSaveFileName(None, "Enregistrer le PNG", "", "PNG Files (*.png);;All Files (*)", options=options)
+        if fileName:
+            if not fileName.endswith('.png'):
+                fileName += '.png'
+            window.grab().save(fileName, 'PNG')
 
 # Main function for the PyQt5 app
+from PyQt5.QtWidgets import QVBoxLayout
+
+from PyQt5.QtWidgets import QHBoxLayout
+
+from PyQt5.QtWidgets import QHBoxLayout
+
+from PyQt5.QtWidgets import QGridLayout
+
 def main(df, meal_plan):
     app = QApplication(sys.argv)
 
@@ -71,27 +63,19 @@ def main(df, meal_plan):
         QWidget {
             font: 12px;
         }
+        QLabel#dayLabel {
+            font-weight: bold;
+        }
         QPushButton {
             background-color: #555555;
             color: white;
             border: none;
-            padding: 10px;
-            min-width: 100px;
-        }
-        QPushButton:hover {
-            background-color: #666666;
-        }
-        QPushButton:pressed {
-            background-color: #777777;
+            padding: 5px;
+            min-width: 60px;
+            max-width: 60px;
         }
         QPushButton#quitButton {
             background-color: #FF5555;
-        }
-        QPushButton#quitButton:hover {
-            background-color: #FF6666;
-        }
-        QPushButton#quitButton:pressed {
-            background-color: #FF7777;
         }
     """
 
@@ -99,50 +83,47 @@ def main(df, meal_plan):
 
     window = QWidget()
     window.setWindowTitle('Planificateur de repas')
-    layout = QVBoxLayout()
+    layout = QGridLayout()
 
+    row = 0
     for day_moment, meal in meal_plan.items():
-        label = QLabel(f"{day_moment}: {meal}")
-        btn = QPushButton("Refuser")
+        day, moment = day_moment.split()
+        day_label = QLabel(f"{day.upper()}")
+        day_label.setObjectName("dayLabel")
+        moment_label = QLabel(f"{moment}")
+        meal_label = QLabel(f"{meal}")
+        meal_label.setWordWrap(True)
         
-        def on_click(day_moment=day_moment, label=label):
+        btn = QPushButton("Suivante")
+        
+        def on_click(day_moment=day_moment, meal_label=meal_label):
             new_meal = replace_meal(day_moment, meal_plan, df)
-            label.setText(f"{day_moment}: {new_meal}")
+            meal_label.setText(f"{new_meal}")
         
-        btn.clicked.connect(lambda checked, day_moment=day_moment, label=label: on_click(day_moment, label))
-        
-        layout.addWidget(label)
-        layout.addWidget(btn)
-    
-    final_btn = QPushButton("Exporter en PDF")
+        btn.clicked.connect(lambda checked, day_moment=day_moment, meal_label=meal_label: on_click(day_moment, meal_label))
 
-    def on_final_click():
-        options = QFileDialog.Options()
-        fileName, _ = QFileDialog.getSaveFileName(None, "Enregistrer le PDF", "", "PDF Files (*.pdf);;All Files (*)", options=options)
-        if fileName:
-            if not fileName.endswith('.pdf'):
-                fileName += '.pdf'
-            generate_pdf(meal_plan, fileName)
+        layout.addWidget(day_label, row, 0)
+        layout.addWidget(moment_label, row, 1)
+        layout.addWidget(meal_label, row, 2)
+        layout.addWidget(btn, row, 3)
 
-    final_btn.clicked.connect(on_final_click)
-    layout.addWidget(final_btn)
-    layout.addWidget(final_btn)
+        row += 1
+
+    png_btn = QPushButton("PNG")
+    png_btn.clicked.connect(on_export_png_click)
+    layout.addWidget(png_btn, row, 0, 1, 2)  # Spanning 2 columns
 
     quit_btn = QPushButton("Quitter")
     quit_btn.setObjectName("quitButton")
-
-    def quit_app():
-        app.quit()
-
-    quit_btn.clicked.connect(quit_app)
-    layout.addWidget(quit_btn)
+    quit_btn.clicked.connect(lambda: app.quit())
+    layout.addWidget(quit_btn, row, 2, 1, 2)  # Spanning 2 columns
 
     window.setLayout(layout)
     window.show()
     sys.exit(app.exec_())
 
 # Load CSV into DataFrame
-df = pd.read_csv('bdd.csv', encoding='utf8')
+df = pd.read_csv('bdd.csv', sep=';', encoding='utf8')
 
 # Generate the initial meal plan
 initial_meal_plan = generate_initial_meal_plan(df)
