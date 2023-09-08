@@ -19,8 +19,8 @@
 - Pardon pour son poids U_U;
 
 # Versions
-- 0.0.2 > Changement de format | Export en PNG | Séparateur ; CSV
-- 0.0.1 > Mise à disposition fonctionnelle (1er jet).
+- 2023/09/08 - 0.0.2 > Changement de format | Export en PNG | Séparateur ; CSV
+- 2023/08/26 - 0.0.1 > Mise à disposition fonctionnelle (1er jet).
 
 ## Capture de PlatDuJour
 ![Capture v0.0.2](https://github.com/gilforge/platdujour/blob/main/img/platdujour_v0.0.2_win.png)
